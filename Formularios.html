@@ -1,35 +1,47 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>
-            Formularios
-        </title>
-    </head>
-    <body>
-        <h1>Formularios</h1>
-        <h2>Ingreso</h2>
-        <form action="Resultados.html" method="get">
-        <div><!-- Nombre Usuario-->
-        
+  <head>
+    <title>Formularios</title>
+  </head>
+  <body>
+    <h1>Formularios</h1>
+    <h2>Ingreso</h2>
+    <form action="Resultados.html" method="get">
+      <div>
+        <!-- Nombre Usuario-->
+
         <label for="Nombreusuario">Nombre de Usuario</label>
-        <input name="Nombreusuario" id="Nombreusuario">
-         </div>
-         <div><!--Contraseña-->
+        <input name="Nombreusuario" id="Nombreusuario" required />
+      </div>
+      <div>
+        <!--Contraseña-->
         <label for="contraseña">Contraseña</label>
-        <input name="contraseña" id="contraseña">
-        </div>
-        <div><!--Mensaje-->
-            Mensaje
-            <label for="Mensaje"></label>
-            
-            <textarea name="Mensaje" id="" cols="30" rows="10"></textarea>
+        <input type="password" name="contraseña" id="contraseña" required />
+      </div>
+      <div>
+        <!--Edad-->
+        <label for="Edad">Edad</label>
+        <input type="number" name="Edad" id="Edad" />
+      </div>
+      <div>
+        <!--Email-->
+        <label for="Email">Email</label>
+        <input type="email" name="Email" id="Email" required />
+      </div>
+      <div>
+        <!--Nacimiento-->
+        <label for="Nacimiento">Nacimiento</label>
+        <input type="date" name="Nacimiento" id="Nacimiento" required />
+      </div>
+      <div>
+        <!--Mensaje-->
+        Mensaje
+        <label for="Mensaje"></label>
 
+        <textarea name="Mensaje" id="" cols="30" rows="10"></textarea>
+      </div>
 
-        </div>
-
-       
-            <button>Enviar</button>
-        </form>
-    </body>
-
+      <button>Enviar</button>
+    </form>
+  </body>
 </html>
